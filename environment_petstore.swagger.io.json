@@ -1,0 +1,12 @@
+{
+  "environment": {
+    "name": "petstore.swagger.io",
+    "values": [
+      {
+        "key": "base_url",
+        "value": "https://petstore.swagger.io/v2",
+        "enabled": true
+      }
+    ]
+  }
+}

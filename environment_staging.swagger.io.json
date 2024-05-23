@@ -1,0 +1,12 @@
+{
+  "environment": {
+    "name": "staging.swagger.io",
+    "values": [
+      {
+        "key": "base_url",
+        "value": "https://staging.swagger.io/v2",
+        "enabled": true
+      }
+    ]
+  }
+}

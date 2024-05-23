@@ -1,0 +1,116 @@
+{
+  "collection": {
+    "info": {
+      "name": "Generated Collection",
+      "description": "Collection generated from Swagger file",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "/pets",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "{{base_url}}/pets",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "pets"
+            ],
+            "query": [
+              {
+                "key": "tags",
+                "value": "[\"failing\"]",
+                "description": "tags to filter by"
+              },
+              {
+                "key": "limit",
+                "value": "orchestration",
+                "description": "maximum number of results to return"
+              }
+            ],
+            "variable": []
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "/pets",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "url": {
+            "raw": "{{base_url}}/pets",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "pets"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "body": {
+            "mode": "raw",
+            "raw": "{\"name\":\"Oriental Cotton Tuna\",\"tag\":\"Licensed Soft Sausages\"}"
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "/pets/{id}",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "{{base_url}}/pets/{id}",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "pets",
+              "{id}"
+            ],
+            "query": [],
+            "variable": [
+              {
+                "key": "id",
+                "value": "",
+                "description": ""
+              }
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "/pets/{id}",
+        "request": {
+          "method": "DELETE",
+          "header": [],
+          "url": {
+            "raw": "{{base_url}}/pets/{id}",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "pets",
+              "{id}"
+            ],
+            "query": [],
+            "variable": [
+              {
+                "key": "id",
+                "value": "",
+                "description": ""
+              }
+            ]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
+}
